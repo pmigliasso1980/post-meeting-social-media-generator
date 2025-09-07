@@ -4,7 +4,7 @@ import { prisma } from "./prisma";
 
 import Credentials from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
-import type { OAuthConfig } from "next-auth/providers";
+import type { OAuthConfig } from "next-auth/providers/oauth";
 import { type NextAuthOptions } from "next-auth";
 
 const isMock = process.env.MOCK_AUTH === "1";
