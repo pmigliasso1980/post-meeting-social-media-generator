@@ -1,4 +1,4 @@
-# Post‑meeting Social Media Content Generator (Starter)
+# Post‑meeting Social Media Content Generator
 
 A GitHub‑ready starter for the paid challenge. Stack:
 - **Next.js (App Router, TypeScript)**
