@@ -1,4 +1,3 @@
-// src/app/meetings/[id]/page.tsx
 import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 
@@ -10,9 +9,9 @@ export default async function MeetingDetail({
   const id = params?.id;
   if (!id) return notFound();
 
-  // Asegúrate de que en tu esquema Meeting.id sea String (o castea si es Int)
+  // Make sure that in your schema Meeting.id is a String (or cast if it is Int)
   const meeting = await prisma.meeting.findUnique({
-    where: { id }, // <- CLAVE: usamos el id de la ruta
+    where: { id }, // <- KEY: we use the id from the route
     include: {
       socialPosts: true,
       event: true,
